@@ -1,0 +1,207 @@
+/* ==========================================
+   FLOATING AI BUTTON
+========================================== */
+
+.floating-ai-btn{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:70px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#FF6B35,#ff8a50);
+
+    color:#fff;
+
+    font-size:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:0 12px 30px rgba(255,107,53,.45);
+
+    z-index:9999;
+
+    transition:.35s ease;
+
+    animation:aiFloat 3s ease-in-out infinite;
+
+}
+
+.floating-ai-btn:hover{
+
+    transform:scale(1.12);
+
+    box-shadow:0 18px 40px rgba(255,107,53,.65);
+
+}
+
+/* ==========================================
+   GLOW RING
+========================================== */
+
+.floating-ai-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:50%;
+
+    background:rgba(255,107,53,.25);
+
+    animation:pulse 2s infinite;
+
+    z-index:-1;
+
+}
+
+/* ==========================================
+   TOOLTIP
+========================================== */
+
+.floating-ai-tooltip{
+
+    position:fixed;
+
+    bottom:115px;
+
+    right:28px;
+
+    background:#1E293B;
+
+    color:#fff;
+
+    padding:10px 16px;
+
+    border-radius:25px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9998;
+
+    pointer-events:none;
+
+}
+
+.floating-ai-btn:hover + .floating-ai-tooltip{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   FLOAT ANIMATION
+========================================== */
+
+@keyframes aiFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   PULSE
+========================================== */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:.7;
+
+    }
+
+    70%{
+
+        transform:scale(1.6);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:scale(1.6);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.floating-ai-btn{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:26px;
+
+    bottom:20px;
+
+    right:20px;
+
+}
+
+.floating-ai-tooltip{
+
+    display:none;
+
+}
+
+}

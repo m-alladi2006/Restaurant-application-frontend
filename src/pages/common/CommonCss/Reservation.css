@@ -1,0 +1,425 @@
+/* ==========================================
+   RESERVATION PAGE
+========================================== */
+
+.reservation-hero{
+
+    height:45vh;
+
+    background:
+    linear-gradient(rgba(73, 71, 70, 0.125),rgba(255,107,53,.82)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+}
+
+.reservation-overlay{
+
+    width:700px;
+    max-width:90%;
+    color:#fff;
+
+}
+
+.reservation-overlay h1{
+
+    font-size:60px;
+    font-weight:700;
+    margin-bottom:20px;
+
+}
+
+.reservation-overlay p{
+
+    font-size:18px;
+    line-height:30px;
+
+}
+
+/* ==========================================
+   BOOKING SECTION
+========================================== */
+
+.reservation-section{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:90px auto;
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:50px;
+
+    align-items:flex-start;
+
+}
+
+/* ==========================================
+   REACT CALENDAR OVERRIDES
+========================================== */
+
+.react-calendar{
+    background:#181818 !important;
+    color:#fff !important;
+    border:none !important;
+}
+
+.react-calendar__month-view__weekdays__weekday{
+    color:#FFD700 !important;
+    font-weight:600;
+    text-transform:uppercase;
+}
+
+.react-calendar__month-view__days__day{
+    color:#fff !important;
+}
+
+.react-calendar__month-view__days__day--weekend{
+    color:#fff !important;
+}
+
+/* Dates from previous/next month */
+.react-calendar__month-view__days__day--neighboringMonth{
+    color:#bdbdbd !important;
+    opacity:1 !important;
+}
+
+/* Today's date */
+.react-calendar__tile--now{
+    background:#444 !important;
+    color:#fff !important;
+    border-radius:8px;
+}
+
+/* Selected date */
+.react-calendar__tile--active{
+    background:#FF6B35 !important;
+    color:#fff !important;
+    border-radius:8px;
+}
+
+/* Hover */
+.react-calendar__tile:hover{
+    background:#ff8a50 !important;
+    color:#fff !important;
+    border-radius:8px;
+}
+
+/* Disable default focus */
+.react-calendar__tile:focus{
+    background:#FF6B35 !important;
+    color:#fff !important;
+}
+
+/* Navigation buttons */
+.react-calendar__navigation button{
+    color:#fff !important;
+    background:transparent !important;
+    border:none;
+}
+
+.react-calendar__navigation button:hover{
+    background:#333 !important;
+    border-radius:8px;
+}
+
+/* Month and Year */
+.react-calendar__navigation__label{
+    color:#FFD700 !important;
+    font-weight:700;
+}
+
+/* Remove default disabled gray */
+/* Disabled (Past Dates) */
+
+.react-calendar__tile:disabled{
+
+    background:#222 !important;
+
+    color:#666 !important;
+
+    cursor:not-allowed;
+
+    opacity:.6;
+
+}
+
+.react-calendar__tile:disabled:hover{
+
+    background:#222 !important;
+
+}
+
+.react-calendar__tile--now{
+
+    background:#FFD700 !important;
+
+    color:#111 !important;
+
+    border-radius:8px;
+
+    font-weight:700;
+
+}
+/* ==========================================
+   FORM
+========================================== */
+
+.reservation-form{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.reservation-form h2{
+
+    font-size:34px;
+
+    margin-bottom:30px;
+
+    color:#1E293B;
+
+}
+
+.reservation-form form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.reservation-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+.reservation-form input,
+
+.reservation-form textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+    background:#fafafa;
+
+    transition:.3s;
+
+}
+
+.reservation-form textarea{
+
+    resize:none;
+
+}
+
+.reservation-form input:focus,
+
+.reservation-form textarea:focus{
+
+    border-color:#FF6B35;
+
+    box-shadow:0 0 8px rgba(255,107,53,.25);
+
+}
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.reservation-btn{
+
+    width:220px;
+
+    background:#FF6B35;
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:40px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.reservation-btn:hover{
+
+    background:#ff5722;
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   LOCATION
+========================================== */
+
+.reservation-location{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:80px auto 100px;
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    gap:35px;
+
+}
+
+.reservation-info{
+
+    background:#FFF8F0;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.reservation-info h2{
+
+    color:#1E293B;
+
+    margin-bottom:25px;
+
+}
+
+.reservation-info p{
+
+    margin-bottom:18px;
+
+    color:#555;
+
+    font-size:16px;
+
+    line-height:28px;
+
+}
+
+.reservation-map iframe{
+
+    width:100%;
+
+    height:100%;
+
+    min-height:420px;
+
+    border:none;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.reservation-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.reservation-location{
+
+    grid-template-columns:1fr;
+
+}
+
+.reservation-row{
+
+    grid-template-columns:1fr;
+
+}
+
+.reservation-btn{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.reservation-hero{
+
+    height:35vh;
+
+}
+
+.reservation-overlay h1{
+
+    font-size:40px;
+
+}
+
+.reservation-overlay p{
+
+    font-size:16px;
+
+}
+
+.reservation-calendar,
+
+.reservation-form,
+
+.reservation-info{
+
+    padding:25px;
+
+}
+
+}

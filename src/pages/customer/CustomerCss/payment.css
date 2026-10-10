@@ -1,0 +1,357 @@
+.payment-page{
+
+    padding:120px 8%;
+
+    min-height:100vh;
+
+    background:#f5f2ed;
+}
+
+.payment-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:35px;
+
+    align-items:start;
+}
+
+.payment-left,
+.payment-right{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    border:1px solid rgba(212,175,55,.35);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ---------- HEADINGS ---------- */
+
+.payment-left h2,
+.payment-right h2{
+
+    color:#D4AF37;
+
+    margin-bottom:25px;
+
+    font-size:34px;
+}
+
+/* ---------- ORDER ITEM ---------- */
+
+.payment-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #e6e6e6;
+}
+
+.payment-item img{
+
+    width:80px;
+
+    height:80px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+}
+
+.payment-item div{
+
+    flex:1;
+}
+
+.payment-item h4{
+
+    margin-bottom:6px;
+
+    font-size:24px;
+
+    color:#111;
+}
+
+.payment-item p{
+
+    color:#666;
+}
+
+.payment-item span{
+
+    font-weight:700;
+
+    font-size:22px;
+}
+
+/* ---------- BILL ---------- */
+
+.bill{
+
+    margin-bottom:30px;
+}
+
+.bill p,
+.bill h3{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin:18px 0;
+
+    font-size:18px;
+}
+
+.bill h3{
+
+    color:#D4AF37;
+
+    font-size:22px;
+}
+
+.bill hr{
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+    margin:18px 0;
+}
+
+/* ---------- PAYMENT ---------- */
+
+.upi-method{
+
+    margin:25px 0;
+
+    background:#fafafa;
+
+    border:2px solid #D4AF37;
+
+    border-radius:12px;
+
+    padding:18px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:600;
+}
+
+.pay-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    background:#D4AF37;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.pay-btn:hover{
+
+    background:#be9722;
+
+    transform:translateY(-3px);
+}
+
+/* ---------- QR BOX ---------- */
+
+.qr-payment{
+
+    margin-top:35px;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    background:#fafafa;
+
+    border:2px dashed #D4AF37;
+
+    text-align:center;
+
+    animation:fadeUp .5s ease;
+}
+
+.qr-payment h3{
+
+    color:#D4AF37;
+
+    margin-bottom:18px;
+
+    font-size:28px;
+}
+
+.qr-image{
+
+    width:240px;
+
+    height:240px;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:20px auto;
+}
+
+.qr-payment p{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+    font-size:16px;
+}
+
+.upi-apps{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:25px;
+}
+
+.upi-apps span{
+
+    background:#fff;
+
+    border:1px solid #ddd;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:600;
+}
+
+.confirm-btn{
+
+    background:#D4AF37;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:15px 35px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.confirm-btn:hover{
+
+    background:#be9722;
+
+    transform:translateY(-2px);
+}
+
+/* ---------- ANIMATION ---------- */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:900px){
+
+    .payment-container{
+
+        grid-template-columns:1fr;
+    }
+
+    .payment-left,
+    .payment-right{
+
+        padding:22px;
+    }
+
+    .payment-left h2,
+    .payment-right h2{
+
+        font-size:28px;
+    }
+
+    .qr-image{
+
+        width:180px;
+
+        height:180px;
+    }
+
+    .payment-item{
+
+        flex-wrap:wrap;
+    }
+
+    .payment-item span{
+
+        width:100%;
+
+        text-align:right;
+    }
+}
+.checkout-btn:disabled{
+
+    background:#999;
+
+    cursor:not-allowed;
+
+    opacity:.7;
+}
