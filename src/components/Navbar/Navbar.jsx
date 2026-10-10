@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaShoppingCart, FaUser, FaRobot } from "react-icons/fa";
+import { FaShoppingCart, FaUser, FaRobot, FaUserShield, FaShoppingBag } from "react-icons/fa";
 import { useCart } from "../../context/CartContext";
 
 import AIChat from "../AIChat/AIChat";
@@ -114,6 +114,10 @@ const handleLogout = () => {
                             {
     !isLoggedIn ? (
         <>
+            <Link to="/admin/login" className="btn login-btn" style={{ backgroundColor: "#dc2626", color: "white", borderColor: "#dc2626" }}>
+                <FaUserShield /> Admin
+            </Link>
+
             <Link to="/login" className="btn login-btn">
                 <FaUser /> Login
             </Link>
@@ -123,12 +127,17 @@ const handleLogout = () => {
             </Link>
         </>
     ) : (
-        <button
-            className="btn login-btn"
-            onClick={handleLogout}
-        >
-            Logout
-        </button>
+        <>
+            <Link to="/my-orders" className="btn login-btn" style={{ marginRight: '10px' }}>
+                <FaShoppingBag /> My Orders
+            </Link>
+            <button
+                className="btn login-btn"
+                onClick={handleLogout}
+            >
+                Logout
+            </button>
+        </>
     )
 }
 

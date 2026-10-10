@@ -16,8 +16,7 @@ import {
 import PageTransition from "../../components/PageTransition";
 import Pagination from "../../components/Pagination/Pagination";
 import FoodCard from "../../components/FoodCard/FoodCard";
-import menuData from "../../data/menuData";
-
+import { getMenu } from "../../utils/menuStorage";
 function Menu() {
 
     const navigate = useNavigate();
@@ -35,7 +34,10 @@ const { addToCart } = useCart();
         "Dessert",
         "Beverages"
     ];
-        const filteredItems = menuData.filter((item) => {
+    
+    const menuData = getMenu();
+
+    const filteredItems = menuData.filter((item) => {
 
         const categoryMatch =
             category === "All" || item.category === category;

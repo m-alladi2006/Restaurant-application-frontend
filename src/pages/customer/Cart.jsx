@@ -30,6 +30,22 @@ function Cart() {
 
     const grandTotal = totalPrice + deliveryFee + gst;
 
+    const handlePlaceOrder = () => {
+        const newOrder = {
+            id: "#ORD-" + Math.floor(1000 + Math.random() * 9000),
+            customer: localStorage.getItem("userEmail") || "Guest",
+            items: cartItems.map(item => `${item.quantity}x ${item.name}`).join(', '),
+            total: `₹${grandTotal.toFixed(2)}`,
+            status: "pending",
+            date: new Date().toLocaleString()
+        };
+
+        const existingOrders = JSON.parse(localStorage.getItem("restaurant_orders") || "[]");
+        localStorage.setItem("restaurant_orders", JSON.stringify([newOrder, ...existingOrders]));
+
+        clearCart();
+        navigate("/order-success");
+    };
 
     return (
 
@@ -166,9 +182,9 @@ function Cart() {
 <button
     className="checkout-btn"
     disabled={cartItems.length === 0}
-    onClick={() => navigate("/payment")}
+    onClick={handlePlaceOrder}
 >
-    Payment
+    Place Order
 </button>
 
                                         <button

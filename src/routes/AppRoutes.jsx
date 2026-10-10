@@ -10,7 +10,10 @@ import Reservation from "../pages/common/Reservation";
 import Menu from "../pages/common/Menu";
 import Cart from "../pages/customer/Cart";
 import NotFound from "../pages/common/NotFound";
-import Payment from "../pages/customer/Payment";
+import OrderSuccess from "../pages/customer/OrderSuccess";
+import MyOrders from "../pages/customer/MyOrders";
+import AdminLogin from "../pages/admin/AdminLogin";
+import AdminDashboard from "../pages/admin/AdminDashboard";
 import FloatingAI from "../components/FloatingAI/FloatingAI";
 
 function AppRoutes() {
@@ -33,8 +36,11 @@ function AppRoutes() {
                     <Route path="/reservation" element={<Reservation />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/login" element={<Login />} />
+                    <Route path="/admin/login" element={<AdminLogin />} />
+                    <Route path="/admin/dashboard" element={<AdminDashboard />} />
                     <Route path="/cart" element={<Cart />} />
-                    <Route path="/payment" element={<Payment />} /> 
+                    <Route path="/order-success" element={<OrderSuccess />} /> 
+                    <Route path="/my-orders" element={<MyOrders />} />
                    <Route path="*" element={<NotFound />} />
                    {/* <Route path="/order-success" element={<OrderSuccess />} /> */}
                 </Routes>
