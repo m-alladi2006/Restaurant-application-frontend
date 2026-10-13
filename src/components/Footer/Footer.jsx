@@ -92,17 +92,17 @@ function Footer() {
 
                         <p>
                             <FaLocationDot className="icon" />
-                            Visakhapatnam, Andhra Pradesh
+                            xxxxxxx
                         </p>
 
                         <p>
                             <FaPhone className="icon" />
-                            +91 7989229964
+                            xxxxxxx
                         </p>
 
                         <p>
                             <FaEnvelope className="icon" />
-                            info@spicehaven.com
+                            xxxxxxx
                         </p>
 
                         <p>
