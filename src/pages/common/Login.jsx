@@ -138,7 +138,7 @@ const handleGoogleLogin = async () => {
 
                         <h1>
 
-                            Login To Spice Haven
+                            Login To Mealnexa
 
                         </h1>
 

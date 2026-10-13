@@ -111,7 +111,7 @@ const Register = () => {
 
                         <h1>
 
-                            Join Spice Haven
+                            Join Mealnexa
 
                         </h1>
 

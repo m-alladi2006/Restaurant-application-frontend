@@ -74,7 +74,7 @@ const Reservation = () => {
                     <h1>Reserve Your Table</h1>
 
                     <p>
-                        Experience unforgettable dining moments at Spice Haven.
+                        Experience unforgettable dining moments at Mealnexa.
                         Book your table today for a premium culinary experience.
                     </p>
 
@@ -187,7 +187,7 @@ const Reservation = () => {
 
                 <div className="reservation-info">
 
-                    <h2>Visit Spice Haven</h2>
+                    <h2>Visit Mealnexa</h2>
 
                     <p>
 

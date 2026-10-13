@@ -15,7 +15,7 @@ function Hero() {
 
                 <div className="container hero-content">
 
-                    <h1>Welcome to Spice Haven</h1>
+                    <h1>Welcome to Mealnexa</h1>
 
                     <h2>Delicious Food, Happy Moments 🍽️</h2>
 

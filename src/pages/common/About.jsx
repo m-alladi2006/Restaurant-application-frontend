@@ -32,12 +32,12 @@ const About = () => {
               </span>
 
               <h1 className="about-main-heading">
-                Spice Haven Restaurant
+                Mealnexa Restaurant
               </h1>
 
               <p className="about-description">
 
-                Spice Haven is where authentic flavors meet elegant
+                Mealnexa is where authentic flavors meet elegant
                 dining. Every dish is carefully crafted using fresh
                 ingredients and premium spices, creating an unforgettable
                 experience for every guest.
@@ -200,7 +200,7 @@ const About = () => {
 
         <span>OUR GALLERY</span>
 
-        <h2>Discover The Beauty Of Spice Haven</h2>
+        <h2>Discover The Beauty Of Mealnexa</h2>
 
         <p>
             Explore our elegant interiors, signature dishes, and warm atmosphere

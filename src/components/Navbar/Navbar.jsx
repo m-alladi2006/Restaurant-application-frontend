@@ -55,7 +55,7 @@ const handleLogout = () => {
                     {/* Logo */}
 
                     <Link className="navbar-brand logo" to="/">
-                        🍽️ Spice Haven
+                        🍽️ Mealnexa
                     </Link>
 
                     {/* Mobile Toggle */}

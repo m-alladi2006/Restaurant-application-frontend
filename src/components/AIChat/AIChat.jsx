@@ -20,7 +20,7 @@ function AIChat({ closeChat }) {
     const [messages, setMessages] = useState([
         {
             sender: "ai",
-            text: "👋 Welcome to Spice Haven! I'm your AI Restaurant Assistant. How may I help you today?"
+            text: "👋 Welcome to Mealnexa! I'm your AI Restaurant Assistant. How may I help you today?"
         }
     ]);
 
@@ -140,7 +140,7 @@ useEffect(() => {
 
                     <div>
 
-                        <h4>Spice Haven AI</h4>
+                        <h4>Mealnexa AI</h4>
 
                         <span>Online</span>
 
@@ -223,7 +223,7 @@ useEffect(() => {
 
         <div className="ai-message">
 
-            🤖 Spice Haven AI is typing...
+            🤖 Mealnexa AI is typing...
 
         </div>
 
