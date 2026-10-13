@@ -46,11 +46,11 @@ const About = () => {
 
               <div className="about-contact-info">
 
-                <p>📍 Banjara Hills, Hyderabad</p>
+                <p>📍 xxxxxxx</p>
 
                 <p>🕒 Open Daily : 10:00 AM – 11:00 PM</p>
 
-                <p>📞 +91 98765 43210</p>
+                <p>📞 xxxxxxx</p>
 
               </div>
 

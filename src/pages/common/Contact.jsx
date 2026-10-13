@@ -85,9 +85,7 @@ const Contact = () => {
               <h4>Address</h4>
 
               <p>
-                Banjara Hills, Road No. 12
-                <br />
-                Hyderabad, Telangana 500034
+                xxxxxxx
               </p>
 
             </div>
@@ -103,7 +101,7 @@ const Contact = () => {
               <h4>Phone</h4>
 
               <p>
-                +91 98765 43210
+                xxxxxxx
               </p>
 
             </div>
@@ -119,7 +117,7 @@ const Contact = () => {
               <h4>Email</h4>
 
               <p>
-                support@spicehaven.com
+                xxxxxxx
               </p>
 
             </div>

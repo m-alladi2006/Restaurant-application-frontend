@@ -191,19 +191,19 @@ const Reservation = () => {
 
                     <p>
 
-                        📍 Banjara Hills, Hyderabad
+                        📍 xxxxxxx
 
                     </p>
 
                     <p>
 
-                        📞 +91 98765 43210
+                        📞 xxxxxxx
 
                     </p>
 
                     <p>
 
-                        ✉ spicehaven@gmail.com
+                        ✉ xxxxxxx
 
                     </p>
 

@@ -34,11 +34,9 @@ Restaurant Information:
 - Restaurant Name: Mealnexa
 - Cuisine: Indian, Chinese, Italian, Continental
 - Opening Hours: 10:00 AM – 11:00 PM
-- Address: Hyderabad, Telangana, India
-- Phone: +91 9876543210
-- Email: support@spicehaven.com
-
-support@spicehaven.com
+- Address: xxxxxxx
+- Phone: xxxxxxx
+- Email: xxxxxxx
 
 Restaurant Menu
 
